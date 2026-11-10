@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "slidev --open",
     "build": "slidev build",
-    "export": "slidev export --format pptx --output slides-export.pptx"
+    "export": "slidev export --format pptx --with-clicks=false --output slides-export.pptx"
   },
   "dependencies": {
     "@slidev/cli": "latest",

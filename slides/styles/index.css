@@ -216,3 +216,23 @@
   border: 2px solid var(--lpc-orange);
   border-radius: 999px;
 }
+
+/* Slide nhiều nội dung: thu nhỏ chữ một chút */
+.dense h1 { font-size: 2.7rem !important; }
+.dense p, .dense li { font-size: 1.12rem !important; line-height: 1.45 !important; }
+.dense ul { margin: 0.2rem 0; }
+.dense li { margin: 0.1rem 0; }
+.dense h2 { font-size: 1.45rem !important; }
+.dense .lpc-mini { padding: 0.45rem 0.8rem; }
+.dense .lpc-mini h3 { font-size: 1.12rem; }
+.dense .lpc-mini p { font-size: 1rem !important; line-height: 1.35 !important; }
+.dense .slidev-code { font-size: 0.82rem !important; line-height: 1.4 !important; }
+.dense .my-4 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+.dense .lesson-body, .dense .lesson-body p { font-size: 1.05rem !important; }
+.dense code { font-size: 0.88em; }
+.dense table { font-size: 1rem; }
+.slidev-layout p.bignum { font-size: 4.2rem !important; line-height: 1.1 !important; }
+
+/* Slide chỉ có tiêu đề (dùng layout qa) */
+.title-only .qa h1 { font-size: 3.6rem !important; line-height: 1.2; text-align: center; max-width: 1000px; }
+.title-only .inset-0 { padding-bottom: 200px; }

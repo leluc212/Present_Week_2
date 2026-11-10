@@ -1,5 +1,5 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ title?: string }>(), { title: 'Bài học' })
+withDefaults(defineProps<{ title?: string }>(), { title: 'Lưu ý' })
 </script>
 
 <template>
