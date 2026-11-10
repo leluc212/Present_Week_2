@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+  --lpc-navy: #0b4da2;
+  --lpc-navy-dark: #083a7a;
+  --lpc-orange: #f7941d;
+  --lpc-soft: #eef2fa;
+  --lpc-ink: #0f1e3d;
+  --lpc-muted: #4a5878;
+}
+
+.slidev-layout {
+  color: var(--lpc-ink);
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.slidev-layout h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  color: var(--lpc-ink);
+  font-size: 3.6rem;
+  margin-bottom: 0;
+}
+
+.slidev-layout h1 + p {
+  opacity: 1;
+}
+
+.slidev-layout h2 {
+  font-weight: 700;
+  color: var(--lpc-navy);
+  font-size: 1.8rem;
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  font-size: 1.4rem;
+  line-height: 1.55;
+}
+
+.slidev-layout ul {
+  list-style: disc;
+  padding-left: 1.3rem;
+}
+
+.slidev-layout li::marker {
+  color: var(--lpc-orange);
+}
+
+.slidev-layout strong {
+  color: var(--lpc-navy);
+  font-weight: 700;
+}
+
+.slidev-layout code {
+  font-size: 0.95em;
+}
+
+/* Chữ viết tay có hiệu ứng phát sáng, giống chữ "Agenda" trong mẫu */
+.lpc-script {
+  font-family: 'Pacifico', cursive;
+  color: #f7b2bd;
+  text-shadow:
+    0 0 6px rgba(244, 114, 140, 0.9),
+    0 0 18px rgba(244, 114, 140, 0.6);
+  font-size: 4rem;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Viên thuốc (pill) */
+.lpc-pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.7rem 2.2rem;
+  background: var(--lpc-navy);
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.35rem;
+}
+
+.lpc-pill.light {
+  background: #dbe8f6;
+  color: var(--lpc-navy);
+}
+
+.lpc-pill.lavender {
+  background: #e3c9f5;
+  color: #3b2a70;
+}
+
+/* Thẻ trắng bo góc */
+.lpc-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.3rem 1.6rem;
+  box-shadow: 0 8px 24px rgba(15, 30, 61, 0.08);
+}
+
+.lpc-tag {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lpc-orange);
+}
+
+/* Code block */
+.slidev-layout pre.slidev-code,
+.slidev-layout .slidev-code {
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  border-radius: 12px;
+}
+
+/* Chip và dòng chảy các bước */
+.lpc-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.6rem 0;
+}
+.lpc-chip {
+  display: inline-block;
+  background: var(--lpc-soft);
+  color: var(--lpc-navy);
+  border: 1.5px solid #c9d7ee;
+  border-radius: 999px;
+  padding: 0.15rem 0.8rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.lpc-arrow {
+  color: var(--lpc-orange);
+  font-weight: 800;
+}
+
+/* Danh sách bước có số (dùng cho các slide "theo lớp") */
+.lpc-steps {
+  list-style: none !important;
+  padding-left: 0 !important;
+  counter-reset: step;
+}
+.lpc-steps li {
+  counter-increment: step;
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin: 0.45rem 0;
+}
+.lpc-steps li::before {
+  content: counter(step);
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--lpc-navy);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-0.1rem);
+}
+
+/* Thẻ nhỏ trong lưới */
+.lpc-mini {
+  background: #fff;
+  border: 1.5px solid #dbe3f0;
+  border-top: 5px solid var(--lpc-navy);
+  border-radius: 14px;
+  padding: 0.7rem 1rem;
+}
+.lpc-mini h3 {
+  margin: 0 0 0.2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--lpc-navy);
+}
+.lpc-mini p {
+  margin: 0;
+  font-size: 1.15rem !important;
+  line-height: 1.45 !important;
+}
+
+/* Bảng */
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+.slidev-layout th {
+  background: var(--lpc-navy);
+  color: #fff;
+  text-align: left;
+  padding: 0.35rem 0.8rem;
+  font-weight: 600;
+}
+.slidev-layout td {
+  padding: 0.28rem 0.8rem;
+  border-bottom: 1px solid #dbe3f0;
+}
+.slidev-layout tr:nth-child(even) td {
+  background: #f6f8fc;
+}
+
+.lpc-ring {
+  display: inline-block;
+  padding: 0 0.4rem;
+  border: 2px solid var(--lpc-orange);
+  border-radius: 999px;
+}
